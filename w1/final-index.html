@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Personal Website</title>
 </head>
 <body>
+    <div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </div>
+    <div class="about" id="about">
+        <h2>About</h2>
+        <p>Hey I'm Jayce. I'm a <b>Bachelor of Computer Science</b> student at Monash University.</p>
+        <img src="https://via.placeholder.com/150" alt="Jayce">
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+            <h3>Project 1</h3>
+            <p>This is the first project I've worked on.</p>
+            <button>View Project</button>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>This is the second project I've worked on.</p>
+            <button>View Project</button>
+        </div>
+
+    </div>
+
+    <div class="experience" id="experience">
+        <h2>Experience</h2>
+        <p>This is the experience/timeline section where I highlight my professional experience and achievements.</p>
+    </div>
+
+    <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <form action="/submit-contact" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <div>
+        <footer>
+            <p>&copy; 2024 Jayce Website. All rights reserved.</p>
+        </footer>
+    </div>
     
 </body>
 </html>
